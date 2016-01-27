@@ -497,6 +497,7 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    margin-top:40px;
 }
 
 
@@ -545,4 +546,5 @@ a:focus {
     margin:auto;
     display:block;
     margin-top:5px;
+    margin-right:36px;
 }
