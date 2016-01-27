@@ -101,9 +101,11 @@
     font-family: 'Expletus Sans', cursive;
     letter-spacing: 1px;
     position:relative;
+}
+@media (min-width:991px) {
     left:200px;
 }
-
+    
 .blurb-container {
     text-align: left;
 }
