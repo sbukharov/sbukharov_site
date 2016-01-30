@@ -14,7 +14,9 @@ body {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     color: #fff;
     background-color: #000;
+    overflow-x:hidden;
 }
+
 
 html {
     width: 100%;
