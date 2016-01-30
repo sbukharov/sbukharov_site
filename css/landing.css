@@ -25,7 +25,7 @@
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 @media(min-width:768px) {
@@ -413,7 +413,8 @@ a:focus {
 }
 
 .hobby-text {
-    display: inline-block;
+    display: inline-block
+    font-size:20px;
 }
 
 .circle-link:hover .circle-display {    
