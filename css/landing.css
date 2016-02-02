@@ -519,6 +519,7 @@ a:focus {
         margin-top: 250px;
     }
 }
+/*List styles*/
 
 .list-wrapper {
     width:70%;
@@ -541,6 +542,7 @@ a:focus {
     font-size:1.2em;
 }
 
+/*Misc/Unsorted styles*/
 .quote-alt {
     color:black;    
 }
@@ -551,3 +553,9 @@ a:focus {
     margin-top:5px;
     margin-right:36px;
 }
+
+
+.alternate-section-2 h2 {
+    padding-top: 50px;
+}
+
