@@ -28,9 +28,24 @@ $(window).scroll(function() {
 // jQuery to rotate resume img on scroll
 //also to slide in download span
 $(window).scroll(function() {
-    if ($(this).scrollTop()>=$(".img-to-rotate").offset().top-300) {
+    if ($(this).scrollTop()>=$(".rotate-trigger").offset().top-600) {
         $(".img-to-rotate").addClass("rotating-img");
         $(".span-to-slide ").addClass("slide-in-span");
+            if ($.contains($(".rotating-img-container")[0],$(".circle-display-lg")[0])) {
+            } else {
+            $(".rotate-trigger").after("<span class=\"circle-link-lg\"><div class=\"circle-display-lg img-to-rotate-lg rotating-img\"></div></span>");
+            }
+        
+        /*
+            .circle-display
+            .circle-display {
+            border-radius: 50%;
+            behavior: url(PIE.htc);
+            width: 180px;
+            height: 180px;
+            background: #9B86A4;
+            border: 5px solid #634271;
+        }*/
     } /*else {
         $(".img-to-rotate").removeClass("rotating-img");
     }*/
@@ -45,6 +60,15 @@ $(".img-to-rotate").hover(function(){
     $(this).attr("src", function(index, attr){
         return attr.replace("2.png", "1.png");
     });
+});
+
+
+$(document).on("mouseenter", ".circle-link-lg", function() {
+     $(".img-to-rotate").css("background-image","url(img/pdf-icn2.png)");
+});
+
+$(document).on("mouseleave", ".circle-link-lg", function() {
+    $(".img-to-rotate").css("background-image","url(img/pdf-icn1.png)");
 });
 
 

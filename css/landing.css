@@ -236,6 +236,46 @@ h2 {
     background-image: url(../img/javalogo.png);
         background-position: center; 
 }
+/* large image rotation + styles */
+.circle-display-lg {
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    width: 280px;
+    height: 280px;
+    background: #9B86A4;
+    border: 5px solid #634271;
+}
+.img-to-rotate-lg {
+    position:relative;
+    left:140px;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .img-to-rotate-lg {
+        position:relative;
+        left:+40px;
+    }
+}
+
+@media (max-width: 991x) {
+    .circle-link-lg {
+        position:relative;
+        left:-1200px;
+    }
+}
+
+.circle-display-lg:hover {    
+    background: #634271;
+    border: 5px solid #412a4b;
+    background-image: url(../img/pdf-icn2.png);
+    background-position: center; 
+}
+
+.circle-display-lg {
+    background-image: url(../img/pdf-icn1.png);
+    background-position: center; 
+}
 
 /*
 .circle-display:hover > .overlay {
